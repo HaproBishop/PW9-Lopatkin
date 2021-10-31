@@ -30,7 +30,7 @@ namespace PW9
             InitializeComponent();
             Table.ItemsSource = VisualTable.CreateTable().DefaultView;
         }
-        private Country[] countries = new Country[0];                //Создаем пустой массив структуры Country
+        private Country[] countries = new Country[0];//Создаем массив структуры Country размером 0 (специально для операторов,чтобы не был равен null)
         public void MessageForUser()
         {
             MessageBox.Show("Некорректно введены значения, прочитайте справку для понимания особенностей программы!",
